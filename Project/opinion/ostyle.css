@@ -1,0 +1,237 @@
+body {
+  font-family: 'helvetica', 'sans-serif';
+  margin: 0;
+}
+
+/* start: global style rules */
+h1, h2, h3, h4, h5 {
+  line-height: 1.5;
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+p, label, strong {
+  line-height: 2;
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+
+/* end: global style rules */
+
+/* start: header styles */
+.bar {
+  background-color: #131313;
+  padding: 15px 0;
+  position: relative;
+  border-bottom: 1px solid #FFB320;
+}
+
+.hamburger-menu {
+  background-color: transparent;
+  border: 1px solid #FFB320;
+  padding: 3px 5px;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger-menu .strip {
+  display: block;
+  height: 1px;
+  background-color: #FFB320;
+  margin: 4px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline-block;
+  font-size: 1em;
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #eee;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: #FFB320;
+}
+.tm h1{
+  background-color: rgb(255, 255, 255) transparent;
+  padding-top: 20px;
+ color: rgb(225, 228, 55);
+  margin: 0;
+  font-weight: normal;
+  font-size: 250%;
+  font-weight: bold;
+  text-align: center;
+
+}
+.tm p{
+  color: rgb(255, 255, 255);
+  margin: 0;
+}
+.tm h2{
+  color: rgb(0, 129, 43);
+  font-weight: normal;
+  font-weight: bold;
+}
+.container{
+  background-image: url("https://hdwallsource.com/img/2017/9/animated-razer-logo-gif-wallpaper-59875-61665-hd-wallpapers.jpg");
+  border-image-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  image-resolution: max;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.content{
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content p{
+    color: #ffffff;
+}
+.main-area{
+  width: 70%;
+  float: left;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.side-area{
+  width: 30%;
+  float: right;
+  background-color: rgb(145, 145, 145);
+  padding: 20px 30px 20px 30px;
+  box-sizing: border-box;
+  font-size: 95%;
+}
+.side-area p{
+  padding: 20px;
+}
+
+/*form style*/
+input,
+select{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 120%;
+}
+input[type="email"],
+input[type="text"],
+select{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+input[type="email"]:focus,
+input[type="text"]:focus{
+  border: 1px solid grey;
+  box-shadow: inset 2px 2px 2px grey;
+}
+.form-submit-button {
+
+  background: #000000;
+  
+  color: rgb(255, 255, 255);
+  
+  border: 1px solid #eee;
+  
+  border-radius: 20px;
+  
+  box-shadow: 5px 5px 5px #eee;
+  
+  text-shadow:none;
+  
+  }
+  
+  .form-submit-button:hover {
+  
+  background: #016ABC;
+  
+  color: #fff;
+  
+  border: 1px solid #eee;
+  
+  border-radius: 20px;
+  
+  box-shadow: 5px 5px 5px #eee;
+  
+  text-shadow:none;
+  
+  }
+.term{
+  color: white;
+}
+form{
+  border-radius: 20%;
+  padding: 20px 10px;
+
+}
+
+.hidden-label{
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.nav-d a:hover{
+  background-color: grey;
+}
+.group::before,
+.group::after{
+  content:"";
+  display: table;
+}
+.group::after{
+  clear: both;
+}
+.group{
+  zoom: 1;
+}
+footer{
+  text-align: center;
+  color: red;
+  padding-bottom: 20px;
+}

@@ -1,0 +1,61 @@
+<?php
+	session_start();
+	require_once('dbconfig/config.php');
+if(isset($_POST["login_btn"]))
+  {
+    @$username=$_POST['username'];
+    @$password=$_POST['password'];
+    $query = "select * from user where username='$username' and password='$password' ";
+    //echo $query;
+    $query_run = mysqli_query($con,$query);
+    //echo mysql_num_rows($query_run);
+    $num = mysqli_num_rows($query_run);
+    if($query_run)
+    {
+      if( $num == 1)
+      {
+      
+      $_SESSION['username'] = $username;
+      
+      header( "Location: ../project/homeL.php");
+      }
+      else
+      {
+        echo '<script type="text/javascript">alert("No such User exists. Invalid Credentials")</script>';
+      }
+    }
+    else
+    {
+      echo '<script type="text/javascript">alert("Database Error")</script>';
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="Lstyle.css">
+</head>
+
+<body>
+<form method="post" class="needs-validation">
+  <div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+      <label for="username">Username</label>
+      <i class="fas fa-user"></i>
+      <input type="text" placeholder="Username" name="username" required>
+    </div>
+
+    <div class="textbox">
+      <label for="password">Password</label>
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" name="password" required>
+    </div class="buttons">
+    <button type="submit" name="login_btn" class="login-btn">Login</button>
+	  <a href="register.php"><button type="button" class="sign-btn">Register</button></a>
+  </div>
+</form>
+</body>
+</html>
